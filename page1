@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details</title>
+
+<style>
+body{
+    background-color: gray;
+    font-family: Arial;
+}
+
+.container{
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>My Details</h2>
+
+<form>
+
+<label>Department</label><br>
+<select>
+    <option>ABC</option>
+    <option>ICT</option>
+    <option>Finance</option>
+    <option>HR</option>
+</select>
+
+<br><br>
+
+<label>Username</label><br>
+<input type="text" value="Adam">
+
+<br><br>
+
+<label>Password</label><br>
+<input type="password" value="12Abcde">
+
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+<br>
+
+<a href="page2.html">Go to Page2</a>
+
+</div>
+
+</body>
+</html>
