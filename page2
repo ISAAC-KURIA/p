@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page 2</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    background-color: lightgray;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>WELCOME TO PAGE 2</h1>
+
+<p>This is the second page.</p>
+
+<a href="page1.html">Back to Page 1</a>
+
+</body>
+</html>
