@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <script>
+
+        function numbersOnly(event)
+        {
+            let key = event.key;
+
+            if(!/[0-9]/.test(key) &&
+               key !== "Backspace" &&
+               key !== "Delete" &&
+               key !== "ArrowLeft" &&
+               key !== "ArrowRight")
+            {
+                event.preventDefault();
+            }
+        }
+
+        function submitDetails()
+        {
+            alert("Detail submitted");
+        }
+
+    </script>
+
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        fieldset{
+            width:50px;
+            padding:20px;
+        }
+
+        nav a{
+            margin-right:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Student Registration</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="pagetwo.html">Page Two</a>
+</nav>
+
+<br>
+
+<form name="studentDetail"
+      method="POST"
+      onsubmit="submitDetails()">
+
+    <fieldset>
+
+        <label>Name</label><br>
+        <input type="text"
+               name="name"
+               required>
+
+        <br><br>
+
+        <label>Phone Number</label><br>
+        <input type="text"
+               name="phone"
+               onkeypress="numbersOnly(event)">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
